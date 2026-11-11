@@ -51,7 +51,7 @@ Para restaurar a funcionalidade completa no iOS 16+:
 ## 📱 Compatibilidade
 
 * **Jailbreaks rootless, iOS 15.0 ou superior** (testado no Dopamine, iOS 16.5). Builds rootful não são mais suportadas.
-* ID do pacote: `com.cdustevich1.s8edge`. Ele substitui o original `com.brunonfl.s8edge`; desinstale o antigo primeiro.
+* ID do pacote: `com.brunonfl.s8edge`.
 * As configurações são aplicadas após um respring (há um botão Respring no painel de configurações do S8Edge).
 
 ## 💻 Como Compilar
@@ -59,7 +59,7 @@ Para restaurar a funcionalidade completa no iOS 16+:
 1.  Instale o [Theos](https://theos.dev/) com um SDK do iOS (15.0 ou superior) e defina `$THEOS`.
 2.  Clone o repositório:
     ```bash
-    git clone https://github.com/cdustevich1/s8edge.git
+    git clone https://github.com/BrunoNFL/s8edge.git
     cd s8edge
     ```
 3.  Compile o pacote rootless:
@@ -72,4 +72,4 @@ Para restaurar a funcionalidade completa no iOS 16+:
     make package install THEOS_DEVICE_IP=<ip-do-dispositivo>
     ```
 
-**Créditos:** Criado originalmente por Bruno Andrade ([/u/BrunoNFL](https://reddit.com/u/BrunoNFL)) em 2017. Atualização rootless / iOS 15+ mantida por cdustevich1.
+**Créditos:** Criado originalmente por Bruno Andrade ([/u/BrunoNFL](https://reddit.com/u/BrunoNFL)) em 2017.

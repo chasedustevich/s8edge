@@ -2,7 +2,7 @@
 
 S8Edge is an **iOS jailbreak tweak** built with **Theos**, originally from 2017 and now updated for **rootless jailbreaks on iOS 15+**. It makes an iPhone screen look like the Galaxy S8 "Infinity" display. It draws a passive overlay window in SpringBoard that adds **rounded screen corners** and a faint **white gradient glow on the left and right edges**. It also ships a **Settings (PreferenceLoader) bundle** so users can configure it.
 
-- Package ID: `com.cdustevich1.s8edge` (see `control`, current version `1.3.0`). It `Conflicts`/`Replaces` the original `com.brunonfl.s8edge`.
+- Package ID: `com.brunonfl.s8edge` (see `control`, current version `1.3.1`).
 - Scheme: **rootless only** (`THEOS_PACKAGE_SCHEME = rootless`, `iphoneos-arm64`, everything installs under `/var/jb`). Rootful is not supported.
 - Depends on: `mobilesubstrate` (ElleKit on Dopamine), `preferenceloader`, `firmware (>= 15.0)`
 - Primary test device: Dopamine, iOS 16.5
@@ -27,7 +27,7 @@ S8Edge is an **iOS jailbreak tweak** built with **Theos**, originally from 2017 
 ## How it works
 
 1. `%hook SpringBoard -applicationDidFinishLaunching:` creates the global `s8EdgeUIvar` and calls `-initializeS8EdgeWindow`.
-2. `S8ELoadPrefs()` reads the `com.cdustevich1.s8edgeprefs` domain through `CFPreferences`. If that's empty, it falls back to `/var/mobile/Library/Preferences/com.cdustevich1.s8edgeprefs.plist`. This path is the same on rootless, because cfprefsd isn't jbroot-prefixed.
+2. `S8ELoadPrefs()` reads the `com.brunonfl.s8edgeprefs` domain through `CFPreferences`. If that's empty, it falls back to `/var/mobile/Library/Preferences/com.brunonfl.s8edgeprefs.plist`. This path is the same on rootless, because cfprefsd isn't jbroot-prefixed.
 3. **Window and scene (the iOS 16 fix).** On iOS 16, SpringBoard only displays windows attached to its main `SBWindowScene`, and a window created with `initWithFrame:` is never shown.
    - `S8EFindMainWindowScene()` picks the `UIWindowScene` on `UIScreen.mainScreen`, preferring `SBWindowScene`.
    - The window is created with `initWithWindowScene:`.
@@ -40,9 +40,9 @@ S8Edge is an **iOS jailbreak tweak** built with **Theos**, originally from 2017 
 6. Settings only apply after a respring. The prefs pane's "Respring" button runs `ROOT_PATH("/usr/bin/killall") backboardd`.
 
 ### Debug logging
-`S8E_DEBUG` in `Tweak.mm` (currently `1`) controls the `S8ELog` output, which is prefixed `[S8Edge]`. To read it, select the device in Console.app and filter on `S8Edge`. The logs show prefs, connected scenes at launch and 2 s later, and the overlay window's scene, visibility, and level. Set it to `0` for release builds.
+`S8E_DEBUG` in `Tweak.mm` (currently `0`) controls the `S8ELog` output, which is prefixed `[S8Edge]`. To read it, select the device in Console.app and filter on `S8Edge`. The logs show prefs, connected scenes at launch and 2 s later, and the overlay window's scene, visibility, and level. Set it to `0` for release builds.
 
-### Preference keys (`com.cdustevich1.s8edgeprefs`)
+### Preference keys (`com.brunonfl.s8edgeprefs`)
 
 | Key | Type | Root.plist default | Fallback in `Tweak.mm` if missing |
 |---|---|---|---|

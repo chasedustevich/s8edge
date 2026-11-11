@@ -8,8 +8,8 @@
 // display's scene. If that scene hasn't connected yet when SpringBoard
 // finishes launching, we wait for it via UIScene notifications.
 
-#define S8E_PREFS_DOMAIN @"com.cdustevich1.s8edgeprefs"
-#define S8E_PREFS_PATH   @"/var/mobile/Library/Preferences/com.cdustevich1.s8edgeprefs.plist"
+#define S8E_PREFS_DOMAIN @"com.brunonfl.s8edgeprefs"
+#define S8E_PREFS_PATH   @"/var/mobile/Library/Preferences/com.brunonfl.s8edgeprefs.plist"
 
 // Debug logging. View in Console.app (filter "S8Edge"). Set to 0 to silence.
 #define S8E_DEBUG 0
@@ -272,6 +272,7 @@ static void S8ELogScenes(NSString *when) {
 }
 
 - (void)logWindowState:(NSString *)when {
+#if S8E_DEBUG
   if (!s8EdgeWindow) {
     S8ELog(@"%@: no overlay window", when);
     return;
@@ -280,6 +281,7 @@ static void S8ELogScenes(NSString *when) {
   S8ELog(@"%@: window=%p scene=%@ <%p> hidden=%d level=%.0f frame=%@",
          when, s8EdgeWindow, scene ? NSStringFromClass([scene class]) : @"(nil)", scene,
          s8EdgeWindow.hidden, s8EdgeWindow.windowLevel, NSStringFromCGRect(s8EdgeWindow.frame));
+#endif
 }
 
 #pragma mark Scene notifications
