@@ -1,7 +1,7 @@
 Package: com.brunonfl.s8edge
 Name: S8Edge
 Depends: mobilesubstrate, preferenceloader, firmware (>= 15.0)
-Version: 1.3.1
+Version: 1.3.0
 Architecture: iphoneos-arm64
 Description: Brings Galaxy S8 Infinity to iOS (rootless, iOS 15+)
 Maintainer: Bruno Andrade <brubiluco@globo.com>

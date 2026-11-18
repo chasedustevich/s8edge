@@ -2,7 +2,7 @@
 
 S8Edge is an **iOS jailbreak tweak** built with **Theos**, originally from 2017 and now updated for **rootless jailbreaks on iOS 15+**. It makes an iPhone screen look like the Galaxy S8 "Infinity" display. It draws a passive overlay window in SpringBoard that adds **rounded screen corners** and a faint **white gradient glow on the left and right edges**. It also ships a **Settings (PreferenceLoader) bundle** so users can configure it.
 
-- Package ID: `com.brunonfl.s8edge` (see `control`, current version `1.3.1`).
+- Package ID: `com.brunonfl.s8edge` (see `control`, current version `1.3.0`).
 - Scheme: **rootless only** (`THEOS_PACKAGE_SCHEME = rootless`, `iphoneos-arm64`, everything installs under `/var/jb`). Rootful is not supported.
 - Depends on: `mobilesubstrate` (ElleKit on Dopamine), `preferenceloader`, `firmware (>= 15.0)`
 - Primary test device: Dopamine, iOS 16.5

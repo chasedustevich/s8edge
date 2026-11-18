@@ -17,7 +17,7 @@ A simple and lightweight jailbreak tweak that brought the popular curved "edge" 
 
 ---
 
-This was updated completely by Antigravity Opus 5.5 Medium to rootless with support for ios 15(?)+ on Dopamine. Tested on 16.5. All credit to BrunoNFL.
+> **Note (v1.3.0 Update):** This tweak has been updated to rootless with support for iOS 15+ (tested on Dopamine, iOS 16.5) by Chase Dustevich ([cdustevich1](https://github.com/cdustevich1)). All original credit and licensing go to Bruno Andrade ([/u/BrunoNFL](https://reddit.com/u/BrunoNFL)).
 
 ## 💡 The Concept
 
@@ -52,6 +52,7 @@ To restore full functionality on iOS 16+:
 
 ## 📱 Compatibility
 
+* **Version:** 1.3.0
 * **Rootless jailbreaks, iOS 15.0 and later** (tested on Dopamine, iOS 16.5). Rootful builds are no longer supported.
 * Package ID: `com.brunonfl.s8edge`.
 * Settings apply after a respring (there's a Respring button in the S8Edge settings pane).
@@ -74,4 +75,4 @@ To restore full functionality on iOS 16+:
     make package install THEOS_DEVICE_IP=<device-ip>
     ```
 
-**Credits:** Originally created by Bruno Andrade ([/u/BrunoNFL](https://reddit.com/u/BrunoNFL)) in 2017.
+**Credits:** Originally created by Bruno Andrade ([/u/BrunoNFL](https://reddit.com/u/BrunoNFL)) in 2017. Updated to rootless (v1.3.0) for iOS 15+ by Chase Dustevich ([cdustevich1](https://github.com/cdustevich1)).

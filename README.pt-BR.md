@@ -17,6 +17,8 @@ Um tweak de jailbreak simples e leve que trouxe a popular estética de tela com 
 
 ---
 
+> **Nota (Atualização v1.3.0):** Este tweak foi atualizado para rootless com suporte para iOS 15+ (testado no Dopamine, iOS 16.5) por Chase Dustevich ([cdustevich1](https://github.com/cdustevich1)). Todos os créditos originais pertencem a Bruno Andrade ([/u/BrunoNFL](https://reddit.com/u/BrunoNFL)).
+
 ## 💡 O Conceito
 
 Este projeto não se tratava de adicionar funcionalidades complexas. Foi uma resposta direta a um pedido do subreddit `/r/jailbreak`. Em uma época em que celulares como o Samsung Galaxy S8 popularizavam telas com bordas curvas, um usuário queria uma maneira simples de trazer essa estética para o seu iPhone.
@@ -50,6 +52,7 @@ Para restaurar a funcionalidade completa no iOS 16+:
 
 ## 📱 Compatibilidade
 
+* **Versão:** 1.3.0
 * **Jailbreaks rootless, iOS 15.0 ou superior** (testado no Dopamine, iOS 16.5). Builds rootful não são mais suportadas.
 * ID do pacote: `com.brunonfl.s8edge`.
 * As configurações são aplicadas após um respring (há um botão Respring no painel de configurações do S8Edge).
@@ -72,4 +75,4 @@ Para restaurar a funcionalidade completa no iOS 16+:
     make package install THEOS_DEVICE_IP=<ip-do-dispositivo>
     ```
 
-**Créditos:** Criado originalmente por Bruno Andrade ([/u/BrunoNFL](https://reddit.com/u/BrunoNFL)) em 2017.
+**Créditos:** Criado originalmente por Bruno Andrade ([/u/BrunoNFL](https://reddit.com/u/BrunoNFL)) em 2017. Atualizado para rootless (v1.3.0) para iOS 15+ por Chase Dustevich ([cdustevich1](https://github.com/cdustevich1)).
