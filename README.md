@@ -17,7 +17,7 @@ A simple and lightweight jailbreak tweak that brought the popular curved "edge" 
 
 ---
 
-> **Note (v1.3.0 Update):** This tweak has been updated to rootless with support for iOS 15+ (tested on Dopamine, iOS 16.5) by Chase Dustevich ([cdustevich1](https://github.com/cdustevich1)). All original credit and licensing go to Bruno Andrade ([/u/BrunoNFL](https://reddit.com/u/BrunoNFL)).
+> **Note (v1.3.0 Update):** This tweak has been updated to rootless with support for iOS 15+ (tested on Dopamine, iOS 16.5) by Chase Dustevich ([chasedustevich](https://github.com/chasedustevich)) with assistance from **Antigravity** (Google DeepMind). All original credit and licensing (GPL-3.0, [LICENSE](LICENSE)) go to Bruno Andrade ([/u/BrunoNFL](https://reddit.com/u/BrunoNFL)).
 
 ## 💡 The Concept
 
@@ -75,4 +75,4 @@ To restore full functionality on iOS 16+:
     make package install THEOS_DEVICE_IP=<device-ip>
     ```
 
-**Credits:** Originally created by Bruno Andrade ([/u/BrunoNFL](https://reddit.com/u/BrunoNFL)) in 2017. Updated to rootless (v1.3.0) for iOS 15+ by Chase Dustevich ([cdustevich1](https://github.com/cdustevich1)).
+**Credits:** Originally created by Bruno Andrade ([/u/BrunoNFL](https://reddit.com/u/BrunoNFL)) in 2017 (GPL-3.0, [LICENSE](LICENSE)). Updated to rootless (v1.3.0) for iOS 15+ by Chase Dustevich ([chasedustevich](https://github.com/chasedustevich)) with assistance from **Antigravity** (Google DeepMind).

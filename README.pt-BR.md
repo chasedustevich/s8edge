@@ -17,7 +17,7 @@ Um tweak de jailbreak simples e leve que trouxe a popular estética de tela com 
 
 ---
 
-> **Nota (Atualização v1.3.0):** Este tweak foi atualizado para rootless com suporte para iOS 15+ (testado no Dopamine, iOS 16.5) por Chase Dustevich ([cdustevich1](https://github.com/cdustevich1)). Todos os créditos originais pertencem a Bruno Andrade ([/u/BrunoNFL](https://reddit.com/u/BrunoNFL)).
+> **Nota (Atualização v1.3.0):** Este tweak foi atualizado para rootless com suporte para iOS 15+ (testado no Dopamine, iOS 16.5) por Chase Dustevich ([chasedustevich](https://github.com/chasedustevich)) com assistência do **Antigravity** (Google DeepMind). Todos os créditos originais e a licença (GPL-3.0, [LICENSE](LICENSE)) pertencem a Bruno Andrade ([/u/BrunoNFL](https://reddit.com/u/BrunoNFL)).
 
 ## 💡 O Conceito
 
@@ -75,4 +75,4 @@ Para restaurar a funcionalidade completa no iOS 16+:
     make package install THEOS_DEVICE_IP=<ip-do-dispositivo>
     ```
 
-**Créditos:** Criado originalmente por Bruno Andrade ([/u/BrunoNFL](https://reddit.com/u/BrunoNFL)) em 2017. Atualizado para rootless (v1.3.0) para iOS 15+ por Chase Dustevich ([cdustevich1](https://github.com/cdustevich1)).
+**Créditos:** Criado originalmente por Bruno Andrade ([/u/BrunoNFL](https://reddit.com/u/BrunoNFL)) em 2017 (GPL-3.0, [LICENSE](LICENSE)). Atualizado para rootless (v1.3.0) para iOS 15+ por Chase Dustevich ([chasedustevich](https://github.com/chasedustevich)) com assistência do **Antigravity** (Google DeepMind).
